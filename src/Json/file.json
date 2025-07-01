@@ -1,0 +1,36 @@
+[
+  {
+    "id": 1,
+    "image": "img1",
+    "name": "DRESES"
+  },
+  {
+    "id": 2,
+    "image": "img2",
+    "name": "WATCHES"
+  },
+  {
+    "id": 3,
+    "image": "img3",
+    "name": "BAGS"
+
+  },
+  {
+    "id": 4,
+    "title": "Item Four",
+    "image": "img4",
+    "name": "SUNGLASSES"
+  },
+  {
+    "id": 5,
+    "title": "Item Five",
+    "image": "img5",
+    "name": "FOOERWEAR"
+
+  },
+  {
+    "id": 6,
+    "image": "img6",
+    "name": "ACCESSORIES"
+  }
+]
