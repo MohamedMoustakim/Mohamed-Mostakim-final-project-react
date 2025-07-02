@@ -10,6 +10,8 @@ import  Features  from './pegas/Features'
 import Blog from './pegas/Blog'
 import About from './pegas/About'
 import Contact from './pegas/Contact'
+import Sinap from './pegas/Sinap'
+import Login from './pegas/Login'
 
 
 function App() {
@@ -25,6 +27,8 @@ function App() {
         <Route path="/Blog" element={<Blog />} />
         <Route path="/About" element={<About />} />
         <Route path="/Contact" element={<Contact />} />
+        <Route path='/Sinap' element={<Sinap />} />
+        <Route path='/Login' element={<Login />} />
       </Routes>
       <Footer />
     </>

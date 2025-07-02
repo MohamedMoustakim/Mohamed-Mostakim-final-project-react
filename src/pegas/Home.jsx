@@ -165,11 +165,6 @@ const Home = () => {
 
     return (
         <main className="flex flex-col w-full items-center overflow-hidden  gap-[5rem]">
-            {/* <div className="fixed inset-0 -z-10">
-                <div className="absolute  "></div>
-                <div className="absolute top-1/4 left-1/4 w-48 h-48 sm:w-96 sm:h-96 rounded-full filter blur-3xl"></div>
-                <div className="absolute bottom-1/4 right-1/4 w-48 h-48 sm:w-96 sm:h-96 rounded-full filter blur-3xl"></div>
-            </div> */}
 
             <div className="w-full max-w-6xl mx-auto">
                 <div className="carousel-container relative">
@@ -354,7 +349,7 @@ const Home = () => {
                     style={{ backgroundImage: `url(${bg2})` }}
                     className="w-full sm:w-1/2 h-[300px] sm:h-[500px] bg-cover bg-center hover:bg-[length:37rem] flex flex-col items-center relative"
                 >
-                    <div className="absolute flex flex-col items-center gap-6 sm:gap-8 top-32 sm:top-60 text-center px-4">
+                    <div className="absolute flex flex-col items-center gap-6 sm:gap-8 top-32 sm:top-60 text-center pt-7 px-4">
                         <div className="flex flex-col items-center">
                             <p className="text-[#919391] hover:text-red-300 text-sm sm:text-base">Boxy2 T-Shirt with Roll Sleeve</p>
                             <h1 className="text-[#5d5e5d] text-lg sm:text-xl">$20.00</h1>

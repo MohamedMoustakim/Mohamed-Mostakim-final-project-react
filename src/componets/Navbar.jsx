@@ -28,16 +28,17 @@ const Navbar = () => {
                     <Link to="/Blog" className="hover:border-b border-black transition">Blog</Link>
                     <Link to="/About" className="hover:border-b border-black transition">About</Link>
                     <Link to="/Contact" className="hover:border-b border-black transition">Contact</Link>
+                    
                 </div>
 
                 
                 <div className="hidden md:flex items-center space-x-4 text-2xl text-gray-500">
-                    <Link to="/account"><VscAccount /></Link>
+                    <Link to="/Login"><VscAccount /></Link>
                     <div className="h-6 w-px bg-gray-400"></div>
-                    <Link to="/login"><IoLockClosedSharp /></Link>
+                    <Link to="/account"><IoLockClosedSharp /></Link>
                 </div>
 
-                {/* Mobile menu button */}
+                
                 <div className="md:hidden flex items-center text-2xl text-gray-700">
                     <button onClick={toggleMenu}>
                         {isOpen ? <FiX /> : <FiMenu />}
@@ -56,8 +57,8 @@ const Navbar = () => {
                     <Link to="/About" onClick={toggleMenu} className="block">About</Link>
                     <Link to="/Contact" onClick={toggleMenu} className="block">Contact</Link>
                     <div className="flex space-x-4 pt-2 text-xl">
-                        <Link to="/account"><VscAccount /></Link>
-                        <Link to="/login"><IoLockClosedSharp /></Link>
+                        <Link to="/Login"><VscAccount /></Link>
+                        <Link to="/account"><IoLockClosedSharp /></Link>
                     </div>
                 </div>
             )}
