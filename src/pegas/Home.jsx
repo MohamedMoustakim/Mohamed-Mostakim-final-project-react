@@ -164,18 +164,18 @@ const Home = () => {
     ];
 
     return (
-        <main className="flex flex-col items-center overflow-hidden  gap-[5rem]">
-            <div className="fixed inset-0 -z-10">
+        <main className="flex flex-col w-full items-center overflow-hidden  gap-[5rem]">
+            {/* <div className="fixed inset-0 -z-10">
                 <div className="absolute  "></div>
                 <div className="absolute top-1/4 left-1/4 w-48 h-48 sm:w-96 sm:h-96 rounded-full filter blur-3xl"></div>
                 <div className="absolute bottom-1/4 right-1/4 w-48 h-48 sm:w-96 sm:h-96 rounded-full filter blur-3xl"></div>
-            </div>
+            </div> */}
 
             <div className="w-full max-w-6xl mx-auto">
                 <div className="carousel-container relative">
                     <div className="absolute top-0 left-0 right-0 h-1 bg-white/10 rounded-full overflow-hidden z-20">
                         <div
-                            className="progress-bar absolute top-0 left-0 h-full bg-gradient-to-r from-violet-500 to-fuchsia-500 transition-all duration-500"
+                            className="progress-bar absolute top-0 left-0 h-full bg-gradient-to-r transition-all duration-500"
                             style={{
                                 width: `${((currentSlide + 1) / slidesData.length) * 100}%`,
                             }}
@@ -243,8 +243,8 @@ const Home = () => {
                             else className += " hidden";
                             return (
                                 <div className={className} key={idx}>
-                                    <div className="w-full h-full p-4 sm:p-8">
-                                        <div className="w-full h-full rounded-xl sm:rounded-2xl overflow-hidden relative group">
+                                    <div className="w-full h-full">
+                                        <div className="w-full h-full overflow-hidden relative group">
                                             <img
                                                 src={slide.img}
                                                 name={slide.name}
@@ -271,7 +271,7 @@ const Home = () => {
                         })}
                     </div>
 
-                    {/* Indicators */}
+                    
                     <div className="absolute bottom-2 sm:bottom-4 left-1/2 -translate-x-1/2 flex gap-1 sm:gap-2 z-20">
                         {slidesData.map((_, idx) => (
                             <button
@@ -383,8 +383,8 @@ const Home = () => {
                 <div className="container mx-auto px-4">
 
                     
-                    <h1 className="text-4xl md:text-5xl font-bold text-center text-gray-800 mb-16">
-                        Our Blog
+                    <h1 className="text-4xl md:text-3xl font-bold text-center text-gray-800 mb-16">
+                        OUR BLOG
                     </h1>
 
                     <div className="flex flex-col md:flex-row items-start justify-between gap-10">
@@ -428,7 +428,7 @@ const Home = () => {
             <section className="py-5 ">
                 <div className="container mx-auto px-4">
 
-                    <h1 className="text-4xl md:text-5xl font-bold text-center text-gray-800 mb-16">
+                    <h1 className="text-4xl md:text-3xl font-bold text-center text-gray-800 mb-16">
                         @ FOLLOW US ON INSTAGRAM
                     </h1>
                     <div className="flex items-center gap-20 py-10">

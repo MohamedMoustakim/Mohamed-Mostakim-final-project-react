@@ -2,6 +2,12 @@ import React from 'react';
 import caroul3 from '../assets/images-44/carousel3.webp'
 import imageOure from "../assets/images-44/blog-01.jpg";
 import imageOure1 from "../assets/images-44/blog-02.jpg";
+import img8 from '../assets/images-44/shopy3.webp'
+import img9 from '../assets/images-44/shopy4.webp'
+import img10 from '../assets/images-44/shopy5.webp'
+import img11 from '../assets/images-44/shopy6.webp'
+import img12 from '../assets/images-44/shopy7.webp'
+
 
 const Blog = () => {
     return (
@@ -9,9 +15,10 @@ const Blog = () => {
             <div className="relative w-full">
                 <img
                     src={caroul3}
-                    className="w-full h-60 object-cover"
+                    alt="Contact"
+                    className="w-full h-20 sm:h-60 md:h-72 lg:h-30 xl:h-66 object-cover"
                 />
-                <h1 className="absolute inset-0 flex items-center justify-center text-white text-6xl font-bold">
+                <h1 className="absolute inset-0 flex items-center justify-center text-white text-3xl sm:text-5xl md:text-6xl font-bold text-center px-4">
                     NEWS
                 </h1>
             </div>
@@ -37,7 +44,35 @@ const Blog = () => {
                     <p className="text-sm text-gray-400 mt-2 pt-3">Duis ut velit gravida nibh bibendum commodo. Suspendisse <br />pellentesque mattis augue id euismod. <br />Interdum et...</p>
                 </div>
             </div>
-            <div></div>
+            <div>
+                <input type="Serch all acticles" />
+                <h1>Featured Products </h1>
+                <div>
+                    <img src={img8} alt="" />
+                    <h1>Boxy7 T-Shirt with Roll <br />Sleeve</h1>
+                    <p>$20.00</p>
+                </div>
+                <div>
+                    <img src={img9} alt="" />
+                    <h1>Boxy6 T-Shirt with Roll <br />Sleeve</h1>
+                    <p>$20.00</p>
+                </div>
+                <div>
+                    <img src={img10} alt="" />
+                    <h1>Boxy6 T-Shirt with Roll <br />Sleeve</h1>
+                    <p>$20.00</p>
+                </div>
+                <div>
+                    <img src={img11} alt="" />
+                    <h1>Boxy6 T-Shirt with Roll <br />Sleeve</h1>
+                    <p>$20.00</p>
+                </div>
+                <div>
+                    <img src={img12} alt="" />
+                    <h1>Boxy6 T-Shirt with Roll <br />Sleeve</h1>
+                    <p>$20.00</p>
+                </div>
+            </div>
 
         </section>
 
