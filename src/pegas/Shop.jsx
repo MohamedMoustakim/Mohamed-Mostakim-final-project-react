@@ -142,7 +142,7 @@ const Shop = () => {
                 <div className="w-[80%] flex flex-col gap-10 items-center ">
                     <div className="flex justify-between w-full items-center">
                         <div className="flex justify-center items-center gap-5">
-                            <select className="border-2 border-[#e6e6e6] w-50 h-10" name="options" id="mySelect">
+                             <select className="border-2 border-[#e6e6e6] text-gray-500 px-4 w-50 h-10" name="options" id="mySelect">
                                 <option value="option1">Alphabetically, A-Z</option>
                                 <option value="option2">Featred</option>
                                 <option value="option3">best selling</option>
@@ -152,7 +152,7 @@ const Shop = () => {
                                 <option value="option7">Date, new to old</option>
                                 <option value="option8">Date, old to new</option>
                             </select>
-                            <select className="border-2 border-[#e6e6e6] w-50 h-10" name="options" id="mySelect">
+                            <select className="border-2 border-[#e6e6e6] text-gray-500 px-4 w-50 h-10" name="options" id="mySelect">
                                 <option value="option1">10</option>
                                 <option value="option2">20</option>
                                 <option value="option3">30</option>

@@ -22,7 +22,7 @@ const Blog = () => {
                     NEWS
                 </h1>
             </div>
-            <div className='flex flex-col gap-10 px-10 pt-10'>
+            <div className='flex flex-col  gap-10 px-10 pt-10'>
                 <div className="flex flex-col w-full md:w-1/3">
                     <img
                         src={imageOure}
