@@ -271,7 +271,7 @@ const Home = () => {
                         })}
                     </div>
 
-                    
+
                     <div className="absolute bottom-2 sm:bottom-4 left-1/2 -translate-x-1/2 flex gap-1 sm:gap-2 z-20">
                         {slidesData.map((_, idx) => (
                             <button
@@ -287,23 +287,24 @@ const Home = () => {
                     </div>
                 </div>
             </div>
-            <div className="flex flex-wrap items-center justify-center gap-10 px-10 py-10 w-full h-full ">
+            <div className="flex flex-wrap items-center justify-center gap-6 px-4 sm:px-10 py-10 w-full">
                 {Mydata.map((item, index) => (
                     <div
                         key={index}
-                        className="w-[30%] h-full flex flex-col items-center relative "
+                        className="w-full sm:w-1/2 md:w-1/3 lg:w-1/4 p-4 flex flex-col items-center relative"
                     >
                         <img
-                            className="w-full h-100 hover:scale-105 duration-500 "
+                            className="w-full h-[70vh] object-cover hover:scale-105 transition-transform duration-500"
                             src={images[item.image]}
-                            alt=""
+                            alt={item.name}
                         />
-                        <button className="w-45 h-10 absolute bottom-5 right-22 cursor-pointer hover:bg-[#e75b47] hover:text-[white] duration-500 bg-[#fdfdfc]/95 ">
+                        <button className="w-40 h-10 absolute bottom-10 cursor-pointer hover:bg-[#e75b47] hover:text-white transition duration-500 bg-[#fdfdfc]/95 text-sm">
                             {item.name}
                         </button>
                     </div>
                 ))}
             </div>
+
             <div className="flex flex-col items-center gap-5  w-[100vw] ">
                 <h1 className="font-bold text-3xl">FEATURED PRODUCTS</h1>
                 <div
@@ -337,52 +338,53 @@ const Home = () => {
                     </div>
                 </div>
             </div>
-            <div className="flex justify-center items-center gap-10 px-10 py-10 bg-[#f2f2f2] w-full ">
+            <div className="flex flex-col sm:flex-row justify-center items-center gap-10 px-4 sm:px-10 py-10 bg-[#f2f2f2] w-full">
                 <div
                     style={{ backgroundImage: `url(${bg1})` }}
-                    className="w-[50%] h-100 bg-cover bg-no-repeat object-cover bg-center hover:bg-size-[50rem]  flex flex-col items-center relative "
+                    className="w-full sm:w-1/2 h-[300px] sm:h-[500px] bg-cover bg-no-repeat bg-center hover:bg-[length:50rem] flex flex-col items-center relative"
                 >
-                    <div className="absolute flex flex-col items-center gap-3 top-36">
-                        <h3 className="text-[white] text-4xl font-bold " >The Beauty</h3>
-                        <h1 className="text-[white] text-7xl font-bold " >Lookbook</h1>
-                        <a className="text-[white] text-2xl " href="#">VIEW COLLECTION</a>
+                    <div className="absolute flex flex-col items-center gap-3 top-24 sm:top-36 text-center px-4">
+                        <h3 className="text-white text-2xl sm:text-4xl font-bold">The Beauty</h3>
+                        <h1 className="text-white text-4xl sm:text-7xl font-bold">Lookbook</h1>
+                        <a className="text-white text-lg sm:text-2xl" href="#">VIEW COLLECTION</a>
                     </div>
                 </div>
+
                 <div
                     style={{ backgroundImage: `url(${bg2})` }}
-                    className="w-[50%] h-100 bg-cover object-cover bg-center hover:bg-size-[37rem]  flex flex-col items-center relative "
+                    className="w-full sm:w-1/2 h-[300px] sm:h-[500px] bg-cover bg-center hover:bg-[length:37rem] flex flex-col items-center relative"
                 >
-                    <div className="absolute flex flex-col items-center gap-8 top-60 ">
+                    <div className="absolute flex flex-col items-center gap-6 sm:gap-8 top-32 sm:top-60 text-center px-4">
                         <div className="flex flex-col items-center">
-                            <p className="text-[#919391] hover:text-red-300">Boxy2 T-Shirt with Roll Sleeve</p>
-                            <h1 className="text-[#5d5e5d]">$20.00</h1>
+                            <p className="text-[#919391] hover:text-red-300 text-sm sm:text-base">Boxy2 T-Shirt with Roll Sleeve</p>
+                            <h1 className="text-[#5d5e5d] text-lg sm:text-xl">$20.00</h1>
                         </div>
-                        <div className="flex gap-3 items-center  ">
-                            <div className=" flex items-center flex-col border-1 border-gray-300 px-3 py-2 ">
-                                <h1 className="text-xl font-light">-2374</h1>
+                        <div className="flex gap-2 sm:gap-3 items-center flex-wrap justify-center">
+                            <div className="flex items-center flex-col border border-gray-300 px-3 py-2">
+                                <h1 className="text-base sm:text-xl font-light">-2374</h1>
                                 <p className="text-[#a99b99]">days</p>
                             </div>
-                            <div className="border-1 border-gray-300 px-4 py-2 ">
-                                <h1 className="text-xl font-light">-12</h1>
+                            <div className="border border-gray-300 px-3 sm:px-4 py-2">
+                                <h1 className="text-base sm:text-xl font-light">-12</h1>
                                 <p className="text-[#a99b99]">hrs</p>
                             </div>
-                            <div className="border-1 border-gray-300 px-4 py-2 ">
-                                <h1 className="text-xl font-light">-55</h1>
+                            <div className="border border-gray-300 px-3 sm:px-4 py-2">
+                                <h1 className="text-base sm:text-xl font-light">-55</h1>
                                 <p className="text-[#a99b99]">mins</p>
                             </div>
-                            <div className="border-1 border-gray-300 px-4 py-2 ">
-                                <h1 className="text-xl font-light">-14</h1>
+                            <div className="border border-gray-300 px-3 sm:px-4 py-2">
+                                <h1 className="text-base sm:text-xl font-light">-14</h1>
                                 <p className="text-[#a99b99]">secs</p>
                             </div>
                         </div>
-
                     </div>
                 </div>
             </div>
+
             <section className="py-20 ">
                 <div className="container mx-auto px-4">
 
-                    
+
                     <h1 className="text-4xl md:text-3xl font-bold text-center text-gray-800 mb-16">
                         OUR BLOG
                     </h1>
@@ -424,36 +426,33 @@ const Home = () => {
 
                 </div>
             </section>
-            
-            <section className="py-5 ">
-                <div className="container mx-auto px-4">
 
-                    <h1 className="text-4xl md:text-3xl font-bold text-center text-gray-800 mb-16">
+            <section className="py-5 bg-white">
+                <div className="container mx-auto px-4">
+                    <h1 className="text-3xl sm:text-4xl font-bold text-center text-gray-800 mb-16">
                         @ FOLLOW US ON INSTAGRAM
                     </h1>
-                    <div className="flex items-center gap-20 py-10">
-                        <div className="flex items-center gap-20 py-10 divide-x divide-gray-300">
-                            <div className="flex items-center flex-col px-10">
-                                <h1 className="font-light text-xl">Free Delivery Worldwide</h1>
-                                <p className="text-gray-400 italic">Mirum est notare quam littera gothica</p>
-                            </div>
 
-                            <div className="flex items-center flex-col px-10">
-                                <h1 className="font-light text-xl">30 Days Return</h1>
-                                <p className="text-gray-400 italic">Simply return it within 30 days for an exchange.</p>
-                            </div>
+                    <div className="flex flex-col md:flex-row items-center justify-center gap-10 md:gap-20 py-10">
 
-                            <div className="flex items-center flex-col px-8">
-                                <h1 className="font-light text-xl">Store Opening</h1>
-                                <p className="text-gray-400 italic">Shop open from Monday to Sunday</p>
-                            </div>
+                        <div className="flex items-center flex-col px-6 text-center">
+                            <h1 className="font-light text-xl">Free Delivery Worldwide</h1>
+                            <p className="text-gray-400 italic">Mirum est notare quam littera gothica</p>
                         </div>
-                    </div>
 
+                        <div className="flex items-center flex-col px-6 text-center">
+                            <h1 className="font-light text-xl">30 Days Return</h1>
+                            <p className="text-gray-400 italic">Simply return it within 30 days for an exchange.</p>
+                        </div>
+
+                        <div className="flex items-center flex-col px-6 text-center">
+                            <h1 className="font-light text-xl">Store Opening</h1>
+                            <p className="text-gray-400 italic">Shop open from Monday to Sunday</p>
+                        </div>
+
+                    </div>
                 </div>
             </section>
-
-
         </main>
 
     );
