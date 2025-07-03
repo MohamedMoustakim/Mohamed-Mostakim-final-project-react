@@ -334,43 +334,40 @@ const Home = () => {
                 </div>
             </div>
             <div className="flex flex-col sm:flex-row justify-center items-center gap-10 px-4 sm:px-10 py-10 bg-[#f2f2f2] w-full">
+                
                 <div
                     style={{ backgroundImage: `url(${bg1})` }}
-                    className="w-full sm:w-1/2 h-[300px] sm:h-[500px] bg-cover bg-no-repeat bg-center hover:bg-[length:50rem] flex flex-col items-center relative"
+                    className="w-full sm:w-1/2 h-[300px] md:h-[400px] lg:h-[500px] bg-cover bg-no-repeat bg-center hover:bg-[length:50rem] flex flex-col items-center justify-center relative"
                 >
-                    <div className="absolute flex flex-col items-center gap-3 top-24 sm:top-36 text-center px-4">
-                        <h3 className="text-white text-2xl sm:text-4xl font-bold">The Beauty</h3>
-                        <h1 className="text-white text-4xl sm:text-7xl font-bold">Lookbook</h1>
-                        <a className="text-white text-lg sm:text-2xl" href="#">VIEW COLLECTION</a>
+                    <div className="absolute flex flex-col items-center gap-2 sm:gap-3 top-1/4 sm:top-1/3 text-center px-4">
+                        <h3 className="text-white text-xl sm:text-3xl font-bold">The Beauty</h3>
+                        <h1 className="text-white text-3xl sm:text-6xl font-bold">Lookbook</h1>
+                        <a className="text-white text-base sm:text-xl underline" href="#">VIEW COLLECTION</a>
                     </div>
                 </div>
 
+                
                 <div
                     style={{ backgroundImage: `url(${bg2})` }}
-                    className="w-full sm:w-1/2 h-[300px] sm:h-[500px] bg-cover bg-center hover:bg-[length:37rem] flex flex-col items-center relative"
+                    className="w-full sm:w-1/2 h-[300px] md:h-[400px] lg:h-[500px] bg-cover bg-center hover:bg-[length:37rem] flex flex-col items-center justify-center relative"
                 >
-                    <div className="absolute flex flex-col items-center gap-6 sm:gap-8 top-32 sm:top-60 text-center pt-7 px-4">
+                    <div className="absolute flex flex-col items-center gap-4 sm:gap-6 top-1/3 sm:top-1/2 -translate-y-1/2 text-center pt-60 px-4">
                         <div className="flex flex-col items-center">
                             <p className="text-[#919391] hover:text-red-300 text-sm sm:text-base">Boxy2 T-Shirt with Roll Sleeve</p>
                             <h1 className="text-[#5d5e5d] text-lg sm:text-xl">$20.00</h1>
                         </div>
                         <div className="flex gap-2 sm:gap-3 items-center flex-wrap justify-center">
-                            <div className="flex items-center flex-col border border-gray-300 px-3 py-2">
-                                <h1 className="text-base sm:text-xl font-light">-2374</h1>
-                                <p className="text-[#a99b99]">days</p>
-                            </div>
-                            <div className="border border-gray-300 px-3 sm:px-4 py-2">
-                                <h1 className="text-base sm:text-xl font-light">-12</h1>
-                                <p className="text-[#a99b99]">hrs</p>
-                            </div>
-                            <div className="border border-gray-300 px-3 sm:px-4 py-2">
-                                <h1 className="text-base sm:text-xl font-light">-55</h1>
-                                <p className="text-[#a99b99]">mins</p>
-                            </div>
-                            <div className="border border-gray-300 px-3 sm:px-4 py-2">
-                                <h1 className="text-base sm:text-xl font-light">-14</h1>
-                                <p className="text-[#a99b99]">secs</p>
-                            </div>
+                            {[
+                                { label: 'days', value: '-2374' },
+                                { label: 'hrs', value: '-12' },
+                                { label: 'mins', value: '-55' },
+                                { label: 'secs', value: '-14' },
+                            ].map((item, i) => (
+                                <div key={i} className="flex flex-col items-center border border-gray-300 px-3 sm:px-4 py-2">
+                                    <h1 className="text-sm sm:text-lg font-light">{item.value}</h1>
+                                    <p className="text-[#a99b99] text-xs sm:text-sm">{item.label}</p>
+                                </div>
+                            ))}
                         </div>
                     </div>
                 </div>
